@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import styles from './App.module.scss';
+import './App.scss';
 
 import profilePic from "./assets/jpg/jennifer_portrait.JPG";
 
@@ -31,11 +32,17 @@ class App extends Component {
 			return (
 				<div className={styles.profilePic}>
 					<span className={styles.h1}>{user.name.first}</span>
-					<div className="">
+					<div className={
+						styles.dflex 
+						+ " " + 
+						styles.flexRow 
+						+ " " + 
+						styles.spaceBetween 
+						+ " " + 
+						styles.panels}
+					>
 						<div className={styles.leftPanel}>
 							<img 
-							height="138px"
-							width="170px"
 								src={user.photo}
 								alt={user.name.first + "'s profile photo"}
 							/>
@@ -56,8 +63,8 @@ class App extends Component {
 								Last updated: today
 							</div>
 						</div>
-						<a href={user.website}>View more pics</a>
 					</div>
+					<a href={user.website}>View more pics</a>
 				</div>
 			)
 		}
@@ -102,24 +109,22 @@ class App extends Component {
 		}
 
 		return (
-			<div className={styles.app}>
-				{/* 
+			<div className={styles.app + " " + styles.dflex}>
 				<header className={styles.banner} aria-hidden="true">
-					<span className={styles.hidden}>
-						<h2 className={styles.hidden}>Search:</h2>
+					<span className="hidden">
+						<h2 className="hidden">Search:</h2>
 						For now this is a placeholder to display the pretty blue banner.
 						TODO: Add the Search bar feature that will search and highlight terms in page or,
 							if the user selects search the web we'll send them over to Brave.
 					</span>
 				</header>
 				<nav className={styles.navigation} aria-hidden="true">
-					<span className={styles.hidden}>
-						<h2 className={styles.hidden}>Navigation:</h2>
+					<span className="hidden">
+						<h2 className="hidden">Navigation:</h2>
 						Navigation placeholder.
 					</span>
 				</nav>
-				*/}
-				<main className={styles.main}>
+				<main className={styles.dflex + " " + styles.flexRow}>
 					<section className={styles.leftPanel}>
 						<PhotoBox />
 						<ContactBox />
@@ -131,7 +136,7 @@ class App extends Component {
 					</section>
 					<section className={styles.rightPanel}>
 						<div className={styles.network}>
-							<h1>{user.name.first} is a web developer in your virtual network</h1>
+							<h1>{user.name.first} is in your virtual network</h1>
 						</div>
 						<div className={styles.blog}></div>
 						<div className={styles.blurbs}></div>

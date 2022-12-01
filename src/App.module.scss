@@ -1,0 +1,81 @@
+.app {
+  flex-direction: column;
+  width: 800px;
+  margin: auto;
+  background-color: white;
+}
+
+.banner {
+  color: white;
+  background-color: #00349a;
+  height: 7.906rem;
+}
+
+.navigation {
+  color: white;
+  background-color: #6698cb;
+  height: 1.625rem;
+}
+
+.h1 {
+  font-size: 1.5em;
+  margin-block-start: 0.83em;
+  margin-block-end: 0.83em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}
+
+main {
+  margin: 1em 1em 1em 2em;
+}
+
+.leftPanel {
+  width: 302px;
+}
+.rightPanel {
+  width: 445px;
+}
+
+.profilePic {
+  width: 300px;
+
+  img{
+    width: 138px;
+    height: 170px; 
+    object-fit: contain;
+  }
+
+  .panels {
+    height: 182px;
+  }
+
+  .leftPanel{ 
+    width: 170px
+  }
+
+  .rightPanel {
+    width: 115px;
+  }
+}
+
+.network {
+  width: 443px;
+  text-align: center;
+  //padding: 1em;
+  border: .25em solid #666;
+}
+
+/* layout */
+.dflex {
+  display: flex;
+}
+
+.flexRow {
+  flex-direction: row;
+}
+
+.spaceBetween {
+  justify-content: space-between;
+}
+/* END layout */
