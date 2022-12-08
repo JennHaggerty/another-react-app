@@ -30,14 +30,14 @@ main {
   margin: 1em 1em 1em 2em;
 }
 
-.leftPanel {
+.left_panel {
   width: 302px;
 }
-.rightPanel {
+.right_panel {
   width: 445px;
 }
 
-.profilePic {
+.profile_pic {
   width: 300px;
 
   img{
@@ -50,32 +50,42 @@ main {
     height: 182px;
   }
 
-  .leftPanel{ 
+  .left_panel{ 
     width: 170px
   }
 
-  .rightPanel {
+  .right_panel {
     width: 115px;
+    display: grid;
+
+    & div:last-of-type {
+      align-self: flex-end;
+    }
   }
 }
 
 .network {
+  //height: 73px;
   width: 443px;
   text-align: center;
   //padding: 1em;
-  border: .25em solid #666;
+  border: .15em solid #666;
 }
 
 /* layout */
-.dflex {
+.d_flex {
   display: flex;
 }
 
-.flexRow {
+.flex_Row {
   flex-direction: row;
 }
 
-.spaceBetween {
+.space_between {
   justify-content: space-between;
 }
 /* END layout */
+
+.orange {
+  color: #FF6600;
+}
