@@ -1,0 +1,13 @@
+.blueTables {
+  border: 3px solid var(--bg-blue-dark);
+  padding: 0;
+  
+  h2 {
+    font-size: 1em;
+    font-weight: bold;
+    color: var(--text-white);
+    background-color: var(--bg-blue-dark);
+    margin: 0;
+    padding: 0 1em;
+  }
+}

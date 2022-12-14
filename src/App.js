@@ -1,8 +1,20 @@
 import React, { Component } from 'react';
-import styles from './App.module.scss';
-import './App.scss';
 
-import Table from "./shared/table"
+import './App.scss';
+import styles from './App.module.scss';
+import divStyles from './assets/stylesheets/divs.module.scss';
+
+import { 
+  BlurbsBox,
+  CompaniesBox,
+  ContactBox,
+  DetailsBox,
+  FriendsBox,
+  InterestsBox,
+  NetworkBox,
+  ProfilePic,
+  SchoolsBox,
+} from './components';
 
 import profile_pic from "./assets/jpg/jennifer_portrait.JPG";
 
@@ -12,13 +24,11 @@ class App extends Component {
   
 	  this.state = {
 			user: {
-				name: {
-					first: "Jennifer",
-					last: "Haggerty"
-				},
+				fname: "Jennifer",
+				lname: "Haggerty",
 				email: "thejenniferhaggerty@protonmail.com",
 				location: "Remote, EST United States",
-				website: "https://studiovonjenn.com",
+				photoLink: "https://studiovonjenn.com",
 				age: 100,
 				pronouns: "She/xe",
 				photo: profile_pic,
@@ -160,241 +170,6 @@ class App extends Component {
 
 	render (){
 		const user = this.state.user;
-
-		const NetworkBox = () => {
-			return (
-				<div className={styles.network}>
-					<h1>{user.name.first} is in your virtual network</h1>
-				</div>
-			)
-		}
-
-		const PhotoBox = () => {
-			return (
-				<div className={styles.profile_pic}>
-					<span className={styles.h1}>{user.name.first}</span>
-					<div className={
-						styles.d_flex 
-						+ " " + 
-						styles.flex_Row 
-						+ " " + 
-						styles.space_between 
-						+ " " + 
-						styles.panels}
-					>
-						<div className={styles.left_panel}>
-							<img 
-								src={user.photo}
-								alt={user.name.first + "'s profile photo"}
-							/>
-						</div>
-						<div className={styles.right_panel}>
-							<div className={styles.row}>
-								"{user.quote}"
-							</div>
-							<div className={styles.row}>
-								{user.pronouns}
-								<br />
-								{user.age} years old
-							</div>
-							<div className={styles.row}>
-								{user.location}
-							</div>
-							<div className={styles.row}>
-								Last updated: today
-							</div>
-						</div>
-					</div>
-					<a href={user.website}>View more pics</a>
-				</div>
-			)
-		}
-
-		const ContactBox = () => {
-			return(
-				<div className={styles.blueTable}>
-					<h2 className={styles.blue_header}>Contacting {user.name.first}</h2>
-					<table>
-						<tbody>
-							<tr>
-								<th>
-									Email
-								</th>
-								<td>
-									<a href={"mailto:" + user.email}>
-										Send Message
-									</a>
-								</td>
-								<th>
-									Resume
-								</th>
-								<td>
-									<button
-										type="button"
-										className={styles.btnAsLink}
-										onClick={() => {
-											//print resume
-
-											//copy link to url
-											//window.navigator.clipboard.writeText(window.location.href);
-										}}
-									>
-										Forward to friend
-									</button>
-								</td>
-							</tr>
-							{/**
-							<tr>
-								<th>
-
-								</th>
-								<td>
-									Add to Friends
-								</td>
-								<th>Bookmark</th>
-								<td>
-									<button
-										type="button"
-										onClick={() => {
-											//print resume
-										}}
-									>
-										Add to Favorites
-									</button>
-								</td>
-							</tr>
-							<tr>
-								<th></th>
-								<td>Instant Message</td>
-								<th>Block website</th>
-								<td>
-									<button
-										type="button"
-										onClick={() => {
-											//pop module asking if user wants to request deblock lint via email
-											//send email
-											//add ip to blocklist
-										}}
-									>Block User
-									</button>
-								</td>
-							</tr>
-							<tr>
-								<th></th>
-								<td>
-									<a href="local">Add to Group</a>
-								</td>
-								<th>Click to be navigated to a review site</th>
-								<td>
-									<button 
-										onClick={() => {
-											// navigate to social site
-										}}
-									>
-										Rank User
-									</button>
-								</td>
-							</tr>
-							 * 
-							 */}
-						</tbody>
-					</table>
-				</div>
-			)
-		}
-
-		/**
-		 * 
-		 * blue tables
-		 */
-		const InterestsBox = () => {
-			return (
-				<div className={styles.blueTable}>
-					<h2>
-						{user.name.first}'s Interests
-					</h2>
-					<Table children={user.interests} />
-				</div>
-			)
-		}
-		const DetailsBox = () => {
-			return (
-				<div className={styles.blueTable}>
-					<h2>
-						{user.name.first}'s Details
-					</h2>
-					<Table children={user.details} />
-				</div>
-			)
-		}
-		const SchoolsBox = () => {
-			return (
-				<div className={styles.blueTable}>
-					<h2>
-						{user.name.first}'s Schools
-					</h2>
-					<Table children={user.schools} />
-				</div>
-			)
-		}
-		const CompaniesBox = () => {
-			return (
-				<div className={styles.blueTable}>
-					<h2>
-						{user.name.first}'s Companies
-					</h2>
-					<Table children={user.companies} />
-				</div>
-			)
-		}
-		/**
-		 * END blue tables
-		 */
-
-		/**
-		 * 
-		 * orange
-		 */
-		const  BlurbsBox= () => {
-			const AboutMe = () => {
-				return (
-					<div>
-						<h3 className={styles.orange}>About me:</h3>
-						<div>
-							{user.about}
-						</div>
-					</div>
-				)
-			}
-			const LikeToMeet = () => {
-				return (
-					<div>
-						<h3 className={styles.orange}>Who I'd like to meet:</h3>
-						<div>
-							{user.likeToMeet}
-						</div>
-					</div>
-				)
-			}
-
-			return (
-				<>
-					<h2>{user.name.first}'s Blurbs</h2>
-					<AboutMe />
-					<LikeToMeet />
-				</>
-			)
-		}
-		const FriendsBox = () => {
-			return (
-				<div>
-					<h2>{user.name.first}'s Friend Space</h2>
-				</div>
-			)
-		}
-		/**
-		 * END orange
-		 */
 		return (
 			<div className={styles.app + " " + styles.d_flex}>
 				<header className={styles.banner} aria-hidden="true">
@@ -413,17 +188,52 @@ class App extends Component {
 				</nav>
 				<main className={styles.d_flex + " " + styles.flex_Row}>
 					<section className={styles.left_panel}>
-						<PhotoBox />
-						<ContactBox />
-						<InterestsBox />
-						<DetailsBox />
-						<SchoolsBox />
+						<ProfilePic
+							fname={user.fname}
+							lname={user.lname}
+							photo={user.photo}
+							age={user.age}
+							pronouns={user.pronouns}
+							quote={user.quote}
+							location={user.location}
+							photoLink={user.photoLink}
+						/>
+						<ContactBox 
+							fname={user.fname}
+							email={user.email}
+						/>
+						<InterestsBox
+							title={user.fname}
+							children={user.interests}
+							customClass={divStyles.blueTables}
+						/>
+						<DetailsBox
+							title={user.fname}
+							children={user.details}
+							customClass={divStyles.blueTables}
+						/>
+						<SchoolsBox
+							title={user.fname}
+							children={user.schools}
+							customClass={divStyles.blueTables}
+						/>
 					</section>
 					<section className={styles.right_panel}>
-						<NetworkBox />
-						<BlurbsBox />
-						<FriendsBox	/>
-						<CompaniesBox />
+						<NetworkBox title={user.fname} />
+						<BlurbsBox
+							title={user.fname}
+							about={user.about}
+							likeToMeet={user.likeToMeet}
+							//customClass={divStyles.orangeTables}
+						/>
+						<FriendsBox
+							title={user.fname}
+						/>
+						<CompaniesBox
+							title={user.fname}
+							children={user.companies}
+							customClass={divStyles.blueTables}
+						/>
 					</section>
 				</main>
 				{/*
