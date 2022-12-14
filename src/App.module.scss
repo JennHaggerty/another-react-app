@@ -1,56 +1,44 @@
-.app {
-  flex-direction: column;
-  width: 800px;
-  margin: auto;
-  background-color: white;
-}
 
-.banner {
-  color: white;
-  background-color: #00349a;
-  height: 7.906rem;
-}
 
-.navigation {
-  color: white;
-  background-color: #6698cb;
-  height: 1.625rem;
-}
-
-.h1 {
-  font-size: 1.5em;
-  margin-block-start: 0.83em;
-  margin-block-end: 0.83em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
-  font-weight: bold;
-}
-
-main {
-  margin: 1em 1em 1em 2em;
-}
-
-.left_panel {
-  width: 302px;
-}
-.right_panel {
-  width: 445px;
-}
-
-/* layout */
-.d_flex {
-  display: flex;
-}
-
-.flex_Row {
-  flex-direction: row;
-}
-
-.space_between {
-  justify-content: space-between;
-}
-/* END layout */
-
-.orange {
-  color: #FF6600;
+@media (min-width: 768px) {
+  .app {
+    flex-direction: column;
+    width: 800px;
+    margin: auto;
+    background-color: white;
+  }
+  
+  .h1 {
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+  }
+  
+  main {
+    margin: 1em 1em 1em 2em;
+  }
+  
+  .left_panel {
+    width: 302px;
+  }
+  .right_panel {
+    width: 445px;
+  }
+  
+  /* layout */
+  .d_flex {
+    display: flex;
+  }
+  
+  .flex_Row {
+    flex-direction: row;
+  }
+  
+  .space_between {
+    justify-content: space-between;
+  }
+  /* END layout */
 }
