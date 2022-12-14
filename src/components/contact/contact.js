@@ -7,7 +7,7 @@ export const ContactBox = ({
   customClass
 }) => {
   return (
-    <div className={customClass ? customClass + " " + styles.contact_box : styles.contact_box}>
+    <div id="contact_box" className={customClass ? customClass + " " + styles.contact_box : styles.contact_box}>
       <h2>Contacting {fname}</h2>
       <table>
         <tbody>

@@ -7,7 +7,7 @@ export const FriendsBox = ({
   customClass
 }) => {
   return (
-    <div className={customClass ? customClass + " " + styles.friend_box : styles.friend_box}>
+    <div id="friends" className={customClass ? customClass + " " + styles.friend_box : styles.friend_box}>
       <h2>{title}'s Friend Space</h2>
     </div>
   )

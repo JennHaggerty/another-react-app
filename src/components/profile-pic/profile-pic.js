@@ -13,7 +13,7 @@ export const ProfilePic = ({
   photoLink,
 }) => {
   return (
-    <div className={styles.profile_pic}>
+    <div id="profile_pic" className={styles.profile_pic}>
       <span className={AppStyles.h1}>{fname} {lname}</span>
       <div className={
         AppStyles.d_flex 

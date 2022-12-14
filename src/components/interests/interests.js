@@ -7,7 +7,7 @@ export const InterestsBox = ({
   customClass
 }) => {
   return (
-    <div className={customClass ? customClass : ""}>
+    <div id="interests" className={customClass ? customClass : ""}>
       <h2>
         {title}'s Interests
       </h2>

@@ -9,7 +9,7 @@ export const BlurbsBox = ({
   const AboutMe = () => {
     return (
       <div>
-        <h3 className="orange">About me:</h3>
+        <h3>About me:</h3>
         <div>
           {about}
         </div>
@@ -19,7 +19,7 @@ export const BlurbsBox = ({
   const LikeToMeet = () => {
     return (
       <div>
-        <h3 className="orange">Who I'd like to meet:</h3>
+        <h3>Who I'd like to meet:</h3>
         <div>
           {likeToMeet}
         </div>
@@ -27,7 +27,7 @@ export const BlurbsBox = ({
     )
   }
   return (
-    <div className={customClass ? customClass : ""}>
+    <div id="blurbs" className={customClass ? customClass : ""}>
       <h2>
         {title}'s Blurbs
       </h2>

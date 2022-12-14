@@ -7,7 +7,7 @@ export const DetailsBox = ({
   customClass
 }) => {
   return (
-    <div className={customClass ? customClass : ""}>
+    <div id="details_box" className={customClass ? customClass : ""}>
       <h2>
         {title}'s Details
       </h2>

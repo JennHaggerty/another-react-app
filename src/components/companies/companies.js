@@ -8,7 +8,7 @@ export const CompaniesBox = ({
   customClass
 }) => {
   return (
-    <div className={customClass ? customClass + " " + styles.company_box : styles.company_box}>
+    <div id="companies" className={customClass ? customClass + " " + styles.company_box : styles.company_box}>
       <h2>
         {title}'s Companies
       </h2>
