@@ -18,6 +18,7 @@ import {
 } from './components';
 
 import profile_pic from "./assets/images/jennifer_portrait.JPG";
+import samson_pic from "./assets/images/samson_portrait.JPG";
 
 class App extends Component {
 	constructor(props) {
@@ -37,78 +38,6 @@ class App extends Component {
 				about: `Jennifer enjoys developing websites and apps that warrant repeat visits through their accessibility
 				and ease of use in frontend development.`,
 				likeToMeet: `I'd like to meet people interested in video games, home improvement, and talking code.`,
-				interests: [
-					{
-						title:"General",
-						text: `Dogs, painting, costume making, blacksmithing, immersive conventions and events.`
-					},
-					{
-						title:"Music",
-						text: `Metal, medieval, goth, synthwave.`
-					},
-					{
-						title:"Movies",
-						text: `90's slashers, epic fantasies, the occasional tearjerker.`
-					},
-					{
-						title:"Television",
-						text: `Mostly for background while gaming or sewing.`
-					},
-					{
-						title:"Books",
-						text: `Supernatural detective stories are my guilty pleasure.`
-					},
-					{
-						title:"Heroes",
-						text: `Cassandra Pentaghast, Haurchefant Greystone, Olivier Mira Armstrong`
-					}
-				],
-				details: [
-					{
-						title: "Status",
-						text: `Full-time`,
-					},
-					{
-						title: "Here for",
-						text: `Friends, Networking`,
-					},
-					{
-						title: "Hometown",
-						text: `Kaiserslautern`,
-					},
-					{
-						title: "Education",
-						text: `BS, AAS`,
-					},
-					{
-						title: "Occupation",
-						text: `Front-end Engineer`,
-					},
-				],
-				schools: [
-					{
-						title: `
-						University of South Carolina
-						Columbia, SOUTH CAROLINA
-						Grad Year: 2012
-						Student Status: Alumni
-						Degree: BA
-						Major: Studio arts
-						`,
-						text: "From 2008 to 2012"
-					},
-					{
-						title: `
-						Augusta Technical College
-						Augusta, GEORGIA
-						Grad Year: 2021
-						Student Status: Alumni
-						Degree: AAS
-						Major: C#, Java, and cross-platform programming
-						`,
-						text: "From 2021 to 2021"
-					}
-				],
 				companies: [
 					{
 						title: "Frontend Engineer at TaxSlayer",
@@ -164,7 +93,93 @@ class App extends Component {
 						`,
 						time:"November 2015 - December 2017",
 					}
-				]
+				],
+				details: [
+					{
+						title: "Status",
+						text: `Full-time`,
+					},
+					{
+						title: "Here for",
+						text: `Friends, Networking`,
+					},
+					{
+						title: "Hometown",
+						text: `Kaiserslautern`,
+					},
+					{
+						title: "Education",
+						text: `BS, AAS`,
+					},
+					{
+						title: "Occupation",
+						text: `Front-end Engineer`,
+					},
+				],
+				friends: [
+					{
+						name: "Samson",
+						photo: samson_pic,
+						title: "Greyhound ambassador",
+						hobbies: "Samson's hobbies include sleeping, leaning, and walks in the park."
+					},
+					{
+						name: "Iris",
+						photo: samson_pic,
+						title: "Intern",
+						hobbies: "Iris' hobbies include eating, playing with toys, and meeting new people."
+					}
+				],
+				interests: [
+					{
+						title:"General",
+						text: `Dogs, photography, painting, and costume making.`
+					},
+					{
+						title:"Music",
+						text: `Metal, medieval, synthwave.`
+					},
+					{
+						title:"Movies",
+						text: `90's slashers, epic fantasies, and the occasional tearjerker.`
+					},
+					{
+						title:"Television",
+						text: `Mostly for background while gaming or sewing.`
+					},
+					{
+						title:"Books",
+						text: `The Hollows by Kim Harrison.`
+					},
+					{
+						title:"Heroes",
+						text: `Cassandra Pentaghast, Haurchefant Greystone, Olivier Mira Armstrong`
+					}
+				],
+				schools: [
+					{
+						title: `
+						University of South Carolina
+						Columbia, SOUTH CAROLINA
+						Grad Year: 2012
+						Student Status: Alumni
+						Degree: BA
+						Major: Studio arts
+						`,
+						text: "From 2008 to 2012"
+					},
+					{
+						title: `
+						Augusta Technical College
+						Augusta, GEORGIA
+						Grad Year: 2021
+						Student Status: Alumni
+						Degree: AAS
+						Major: C#, Java, and cross-platform programming
+						`,
+						text: "From 2021 to 2021"
+					}
+				],
 			}
 	  };
 	}
@@ -177,6 +192,7 @@ class App extends Component {
 				<main className={styles.d_flex + " " + styles.flex_Row}>
 					<section className={styles.left_panel}>
 						<ProfilePic
+							id="profile-pic"
 							fname={user.fname}
 							lname={user.lname}
 							photo={user.photo}
