@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 
 import './App.scss';
+import './assets/stylesheets/2004_variables.scss';
 import styles from './App.module.scss';
-import divStyles from './assets/stylesheets/divs.module.scss';
 
 import { 
   BlurbsBox,
@@ -10,13 +10,14 @@ import {
   ContactBox,
   DetailsBox,
   FriendsBox,
+	Header,
   InterestsBox,
   NetworkBox,
   ProfilePic,
   SchoolsBox,
 } from './components';
 
-import profile_pic from "./assets/jpg/jennifer_portrait.JPG";
+import profile_pic from "./assets/images/jennifer_portrait.JPG";
 
 class App extends Component {
 	constructor(props) {
@@ -172,20 +173,7 @@ class App extends Component {
 		const user = this.state.user;
 		return (
 			<div className={styles.app + " " + styles.d_flex}>
-				<header className={styles.banner} aria-hidden="true">
-					<span className="hidden">
-						<h2 className="hidden">Search:</h2>
-						For now this is a placeholder to display the pretty blue banner.
-						TODO: Add the Search bar feature that will search and highlight terms in page or,
-							if the user selects search the web we'll send them over to Brave.
-					</span>
-				</header>
-				<nav className={styles.navigation} aria-hidden="true">
-					<span className="hidden">
-						<h2 className="hidden">Navigation:</h2>
-						Navigation placeholder.
-					</span>
-				</nav>
+				<Header />
 				<main className={styles.d_flex + " " + styles.flex_Row}>
 					<section className={styles.left_panel}>
 						<ProfilePic
@@ -205,17 +193,17 @@ class App extends Component {
 						<InterestsBox
 							title={user.fname}
 							children={user.interests}
-							customClass={divStyles.blueTables}
+							//customClass={divStyles.blueTables}
 						/>
 						<DetailsBox
 							title={user.fname}
 							children={user.details}
-							customClass={divStyles.blueTables}
+							//customClass={divStyles.blueTables}
 						/>
 						<SchoolsBox
 							title={user.fname}
 							children={user.schools}
-							customClass={divStyles.blueTables}
+							//customClass={divStyles.blueTables}
 						/>
 					</section>
 					<section className={styles.right_panel}>
@@ -232,7 +220,7 @@ class App extends Component {
 						<CompaniesBox
 							title={user.fname}
 							children={user.companies}
-							customClass={divStyles.blueTables}
+							//customClass={divStyles.blueTables}
 						/>
 					</section>
 				</main>

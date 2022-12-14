@@ -3,6 +3,7 @@ import { CompaniesBox } from './companies/companies';
 import { ContactBox } from './contact/contact';
 import { DetailsBox } from './details/details';
 import { FriendsBox } from './friends/friends';
+import { Header } from './header/header';
 import { InterestsBox } from './interests/interests';
 import { NetworkBox } from './network/network';
 import { ProfilePic } from "./profile-pic/profile-pic";
@@ -14,6 +15,7 @@ export {
   ContactBox,
   DetailsBox,
   FriendsBox,
+  Header,
   InterestsBox,
   NetworkBox,
   ProfilePic,
