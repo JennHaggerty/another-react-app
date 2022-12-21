@@ -1,0 +1,17 @@
+.orangeText {
+  color: var(--text-secondary);
+}
+
+h3 {
+  font-size: var(--text-size-body);
+  margin-bottom: 0;
+}
+
+.about,
+.meet {
+  padding: 0 0.5em;
+}
+
+.about h3 {
+  margin-top: 0;
+}

@@ -11,86 +11,139 @@ export const user = {
   age: 100,
   pronouns: "She/xe",
   photo: jenn_pic,
-  quote: "wee :D",
+  quote: "Why is there bacon in the soap?!",
   about: `Jennifer enjoys developing websites and apps that warrant repeat visits through their accessibility
   and ease of use in frontend development.`,
   likeToMeet: `I'd like to meet people interested in video games, home improvement, and talking code.`,
   companies: [
     {
       title: "Frontend Engineer at TaxSlayer",
-      text: `
-        Apply C#, HTML/CSS, React, and JavaScript alterations to in-house applications.
-        Triage broken elements and functionality.
-        On-call support for consumer application.
-        Execute brand cohesive website and marketing campaigns with designer provided comps.
-        Participate in daily standups, bi-weekly grooming sessions, and adapt to SCRUM/AGILE/Kanban methodologies.
-      `,
+      text:
+        <ul>
+          <li>
+            Apply C#, HTML/CSS, React, and JavaScript alterations to in-house applications.
+          </li>
+          <li>
+            Triage broken elements and functionality.
+          </li>
+          <li>
+            On-call support for consumer application.
+          </li>
+          <li>
+            Execute brand cohesive website and marketing campaigns with designer provided comps.
+          </li>
+          <li>
+            Participate in daily standups, bi-weekly grooming sessions, and adapt to SCRUM/AGILE/Kanban methodologies.
+          </li>
+      </ul>,
       time: "September 2021 - Present",
     },
     {
       title: "Developer, Support Specialist in freelance",
-      text: `
-        Apply PHP, CSS, and JavaScript alterations to client themes.
-        Keep website plugins and Wordpress versions up-to-date; triage broken elements and functionality.
-        Working with graphic designers in creating brand cohesive ecommerce website and marketing campaigns.
-        Build, and host, web appliances using Wordpress and Shopify.
-      `,
+      text: 
+      <ul>
+        <li>
+          Apply PHP, CSS, and JavaScript alterations to client themes.
+        </li>
+        <li>
+          Keep website plugins and Wordpress versions up-to-date; triage broken elements and functionality.
+        </li>
+        <li>
+          Working with graphic designers in creating brand cohesive ecommerce website and marketing campaigns.
+        </li>
+        <li>
+          Build, and host, web appliances using Wordpress and Shopify.
+        </li>
+      </ul>,
       time:"November 2015 - December 2021",
     },
     {
       title: "Platform Integrations Specialist at GoCollect LLC",
-      text: `
-        Pushed test driven and versioned development through MVC PHP framework.
-        Automated company onboarding process with Docker and Ansible.
-        Prototype campaigns from wireframe mockup and push to UI implementation.
-        Created inventory app; Node.js and JavaScript in the backend, React on the frontend.
-        Provided documentation for app, onboarding, case studies, and customized code.
-      `,
+      text: 
+      <ul>
+        <li>
+          Pushed test driven and versioned development through MVC PHP framework.
+        </li>
+        <li>
+          Automated company onboarding process with Docker and Ansible.
+        </li>
+        <li>
+          Prototype campaigns from wireframe mockup and push to UI implementation.
+        </li>
+        <li>
+          Created inventory app; Node.js and JavaScript in the backend, React on the frontend.
+        </li>
+        <li>
+          Provided documentation for app, onboarding, case studies, and customized code.
+        </li>
+      </ul>,
       time:"March 2019 - April 2020",
     },
     {
       title: "Software Engineer at Fast Growing Trees ",
-      text: `
-        Merged disparate PHP modules into a single governing module.
-        Reduced overhead of using multiple third party ecommerce services.
-        Conformed module stylesheets, CSS, Bootstrap, Flexbox, to brand.
-        Interpreted SQL data with PHP returning metadata and stylizing with CSS and jQuery.
-        Addressed critical ADA Compliance elements on mobile and desktop platforms.
-        Automated daily reporting for core operations with PHP, javaScript, MySQL and MSSQL.
-      `,
+      text: 
+      <ul>
+        <li>
+          Merged disparate PHP modules into a single governing module.
+        </li>
+        <li>
+          Reduced overhead of using multiple third party ecommerce services.
+        </li>
+        <li>
+          Conformed module stylesheets, CSS, Bootstrap, Flexbox, to brand.
+        </li>
+        <li>
+          Interpreted SQL data with PHP returning metadata and stylizing with CSS and jQuery.
+        </li>
+        <li>
+          Addressed critical ADA Compliance elements on mobile and desktop platforms.
+        </li>
+        <li>
+          Automated daily reporting for core operations with PHP, javaScript, MySQL and MSSQL.
+        </li>
+      </ul>,
       time:"January 2018 - February 2019",
     },
     {
       title: "Web Developer at DigitalDerm Inc.",
-      text: `
-        Migrated website from GoDaddy hosting to AWS leading to a significant reduction in operation costs.
-        Converted static HTML/CSS website for in-house web administration using Wordpress.
-        Themed site with responsive design, materially increasing SEO ranking.
-        Handled social engagement and email campaigns as acting marketing manager.
-      `,
+      text: 
+      <ul>
+        <li>
+          Migrated website from GoDaddy hosting to AWS leading to a significant reduction in operation costs.
+        </li>
+        <li>
+          Converted static HTML/CSS website for in-house web administration using Wordpress.
+        </li>
+        <li>
+          Themed site with responsive design, materially increasing SEO ranking.
+        </li>
+        <li>
+          Handled social engagement and email campaigns as acting marketing manager.
+        </li>
+      </ul>,
       time:"November 2015 - December 2017",
     }
   ],
   details: [
     {
-      title: "Status",
+      title: "Status:",
       text: `Full-time`,
     },
     {
-      title: "Here for",
+      title: "Here for:",
       text: `Friends, Networking`,
     },
     {
-      title: "Hometown",
-      text: `Kaiserslautern`,
+      title: "Hometown:",
+      text: `Kaiserslautern, Germany`,
     },
     {
-      title: "Education",
+      title: "Education:",
       text: `BS, AAS`,
     },
     {
-      title: "Occupation",
-      text: `Front-end Engineer`,
+      title: "Occupation:",
+      text: `Interface Developer`,
     },
   ],
   friends: [
@@ -109,28 +162,28 @@ export const user = {
   ],
   interests: [
     {
-      title:"General",
-      text: `Dogs, photography, painting, and costume making.`
+      title:"Front-end",
+      text: `React, Vue.js, Angular, Ionic, Wordpress, Shopify, Magento, WooCommerce, Square Space, HTML(5), CSS, Sass/SCSS, LESS, Bootstrap, Flexbox, jQuery, javaScript`
     },
     {
-      title:"Music",
-      text: `Metal, medieval, synthwave.`
+      title:"Back-end",
+      text: `Node.js, Express.js, Java, C#, PHP`
     },
     {
-      title:"Movies",
-      text: `90's slashers, epic fantasies, and the occasional tearjerker.`
+      title:"Database",
+      text: `MySQL, MariaDB, MongoDB`
     },
     {
-      title:"Television",
-      text: `Mostly for background while gaming or sewing.`
+      title:"Operating Systems",
+      text: `OSX, Windows, Linux`
     },
     {
-      title:"Books",
-      text: `The Hollows by Kim Harrison.`
+      title:"Source Control",
+      text: `Github, GitLab, Bitbucket`
     },
     {
-      title:"Heroes",
-      text: `Cassandra Pentaghast, Haurchefant Greystone, Olivier Mira Armstrong`
+      title:"Project Management",
+      text: `Jira, Github, Trello`
     }
   ],
   schools: [

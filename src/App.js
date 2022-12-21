@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { BrowserView, MobileView } from 'react-device-detect';
 
 import './App.scss';
 import './assets/stylesheets/2004_variables.scss';
@@ -31,62 +32,109 @@ class App extends Component {
 	render (){
 		const user = this.state.user;
 		return (
-			<div className={styles.app + " " + styles.d_flex}>
+			<>
 				<Header />
-				<main className={styles.d_flex + " " + styles.flex_Row}>
-					<section className={styles.left_panel}>
-						<ProfilePic
-							fname={user.fname}
-							lname={user.lname}
-							photo={user.photo}
-							age={user.age}
-							pronouns={user.pronouns}
-							quote={user.quote}
-							location={user.location}
-							photoLink={user.photoLink}
-						/>
-						<ContactBox 
-							fname={user.fname}
-							email={user.email}
-						/>
-						<InterestsBox
-							title={user.fname}
-							children={user.interests}
-							//customClass={divStyles.blueTables}
-						/>
-						<DetailsBox
-							title={user.fname}
-							children={user.details}
-							//customClass={divStyles.blueTables}
-						/>
-						<SchoolsBox
-							title={user.fname}
-							children={user.schools}
-							//customClass={divStyles.blueTables}
-						/>
-					</section>
-					<section className={styles.right_panel}>
-						<NetworkBox title={user.fname} />
-						<BlurbsBox
-							title={user.fname}
-							about={user.about}
-							likeToMeet={user.likeToMeet}
-							//customClass={divStyles.orangeTables}
-						/>
-						<FriendsBox
-							title={user.fname}
-						/>
-						<CompaniesBox
-							title={user.fname}
-							children={user.companies}
-							//customClass={divStyles.blueTables}
-						/>
-					</section>
+				<main className={styles.columns}>
+					<MobileView>
+							<ProfilePic
+								fname={user.fname}
+								lname={user.lname}
+								photo={user.photo}
+								age={user.age}
+								pronouns={user.pronouns}
+								quote={user.quote}
+								location={user.location}
+								photoLink={user.photoLink}
+							/>
+							<ContactBox 
+								fname={user.fname}
+								email={user.email}
+								customClass={styles.blueBox}
+							/>
+							<BlurbsBox
+								title={user.fname}
+								about={user.about}
+								likeToMeet={user.likeToMeet}
+								customClass={styles.orangeBox}
+							/>
+							<DetailsBox
+								title={user.fname}
+								children={user.details}
+								customClass={styles.blueBox + " " + styles.blueTable}
+							/>
+							<InterestsBox
+								title={user.fname}
+								children={user.interests}
+								customClass={styles.blueBox + " " + styles.blueTable}
+							/>
+							<CompaniesBox
+								title={user.fname}
+								children={user.companies}
+								customClass={styles.blueBox + " " + styles.blueTable}
+							/>
+							<SchoolsBox
+								title={user.fname}
+								children={user.schools}
+								customClass={styles.blueBox + " " + styles.blueTable}
+							/>
+					</MobileView>
+					<BrowserView>
+						<div className={styles.column}>
+							<ProfilePic
+								fname={user.fname}
+								lname={user.lname}
+								photo={user.photo}
+								age={user.age}
+								pronouns={user.pronouns}
+								quote={user.quote}
+								location={user.location}
+								photoLink={user.photoLink}
+							/>
+							<ContactBox 
+								fname={user.fname}
+								email={user.email}
+								customClass={styles.blueBox}
+							/>
+							<InterestsBox
+								title={user.fname}
+								children={user.interests}
+								customClass={styles.blueBox + " " + styles.blueTable}
+							/>
+							<DetailsBox
+								title={user.fname}
+								children={user.details}
+								customClass={styles.blueBox + " " + styles.blueTable}
+							/>
+							<SchoolsBox
+								title={user.fname}
+								children={user.schools}
+								customClass={styles.blueBox + " " + styles.blueTable}
+							/>
+						</div>
+						<div className={styles.column}>
+							<NetworkBox title={user.fname} />
+							<BlurbsBox
+								title={user.fname}
+								about={user.about}
+								likeToMeet={user.likeToMeet}
+								customClass={styles.orangeBox}
+							/>
+							<FriendsBox
+								title={user.fname}
+								customClass={styles.orangeBox}
+							/>
+							<CompaniesBox
+								title={user.fname}
+								children={user.companies}
+								customClass={styles.blueBox + " " + styles.blueTable}
+							/>
+						</div>
+					</BrowserView>
 				</main>
 				{/*
 				<footer className={styles.footer}></footer>
 				*/}
-			</div>
+			</>
 		)
 	}
 }

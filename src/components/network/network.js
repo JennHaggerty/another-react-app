@@ -6,7 +6,7 @@ export const NetworkBox = ({
   customClass
 }) => {
   return (
-    <div id="network_box" className={customClass ? styles.network + " " + customClass : styles.network}>
+    <div id="network" className={customClass ? styles.network + " " + customClass : styles.network}>
       <h1>{title} is in your virtual network</h1>
     </div>
   )

@@ -1,6 +1,5 @@
 import React from "react";
 import styles from "./profile-pic.module.scss";
-import AppStyles from "../../App.module.scss"
 
 export const ProfilePic = ({
   fname,
@@ -13,41 +12,33 @@ export const ProfilePic = ({
   photoLink,
 }) => {
   return (
-    <div id="profile_pic" className={styles.profile_pic}>
-      <span className={AppStyles.h1}>{fname} {lname}</span>
-      <div className={
-        AppStyles.d_flex 
-        + " " + 
-        AppStyles.flex_Row 
-        + " " + 
-        AppStyles.space_between 
-        + " " + 
-        AppStyles.panels}
-      >
-        <div className={AppStyles.left_panel}>
+    <div id="profile_pic" className={styles.pic}>
+      <span className="h1">{fname} {lname}</span>
+      <div className="dflex">
+        <div className={styles.img}>
           <img 
             src={photo}
             alt={fname + "'s profile photo"}
           />
         </div>
-        <div className={AppStyles.right_panel}>
-          <div className={AppStyles.row}>
+        <div>
+          <p>
             "{quote}"
-          </div>
-          <div className={AppStyles.row}>
+          </p>
+          <p>
             {pronouns}
             <br />
             {age} years old
-          </div>
-          <div className={AppStyles.row}>
+          </p>
+          <p>
             {location}
-          </div>
-          <div className={AppStyles.row}>
+          </p>
+          <p>
             Last updated: today
-          </div>
+          </p>
         </div>
       </div>
-      <a href={photoLink}>View more pics</a>
+      <a className={styles.view_more} href={photoLink}>View more pics</a>
     </div>
   )
 }

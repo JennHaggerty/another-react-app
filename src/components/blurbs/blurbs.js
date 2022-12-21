@@ -1,4 +1,5 @@
 import React from "react";
+import styles from "./blurbs.module.scss";
 
 export const BlurbsBox = ({
   title,
@@ -8,8 +9,8 @@ export const BlurbsBox = ({
 }) => {
   const AboutMe = () => {
     return (
-      <div>
-        <h3>About me:</h3>
+      <div className={styles.about}>
+        <h3 className={styles.orangeText}>About me:</h3>
         <div>
           {about}
         </div>
@@ -18,8 +19,8 @@ export const BlurbsBox = ({
   }
   const LikeToMeet = () => {
     return (
-      <div>
-        <h3>Who I'd like to meet:</h3>
+      <div className={styles.meet}>
+        <h3 className={styles.orangeText}>Who I'd like to meet:</h3>
         <div>
           {likeToMeet}
         </div>

@@ -1,19 +1,22 @@
 import React from "react";
 import styles from "./contact.module.scss";
 
+import emailIcon from "../../assets/images/icon_email.gif";
+import forwardIcon from "../../assets/images/icon_forward.gif";
+
 export const ContactBox = ({
   fname,
   email,
   customClass
 }) => {
   return (
-    <div id="contact_box" className={customClass ? customClass + " " + styles.contact_box : styles.contact_box}>
+    <div id="contact" className={customClass ?  styles.contact_box + " " + customClass : styles.contact_box}>
       <h2>Contacting {fname}</h2>
       <table>
         <tbody>
           <tr>
             <th>
-              Email
+              <img className={styles.contactIcon} src={emailIcon} alt={"Click to email " + fname} />
             </th>
             <td>
               <a href={"mailto:" + email}>
@@ -21,12 +24,12 @@ export const ContactBox = ({
               </a>
             </td>
             <th>
-              Resume
+              <img className={styles.contactIcon} src={forwardIcon} alt={"Click to download " + fname + "'s resume"} />
             </th>
             <td>
               <button
                 type="button"
-                className={styles.btnAsLink}
+                className="style-as-link"
                 onClick={() => {
                   //print resume
 

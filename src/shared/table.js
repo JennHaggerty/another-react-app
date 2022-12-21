@@ -1,6 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import styles from "./table.module.scss";
 
 const tablePropTypes = {
   id: PropTypes.string,
@@ -15,7 +14,6 @@ const tableDefaultProps = {
 export const Table = ({
   id,
   children,
-  customClass,
 }) => {
   const rows = children.map(({title, text}) => {
     return (
@@ -31,7 +29,6 @@ export const Table = ({
   return (
     <table
       id={id}
-      className={customClass ? styles.table + " " + customClass : styles.table}
     >
       <tbody>
         {rows}

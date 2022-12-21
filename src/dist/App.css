@@ -5,10 +5,9 @@ body {
 
 #root {
   background-color: var(--white);
-
-  main > div > div {
-    margin: 1em 0;
-  }
+}
+#root main > div > div {
+  margin: 1em 0;
 }
 
 main {
@@ -16,7 +15,7 @@ main {
   flex-direction: column;
   margin: 0 1em;
 }
-  
+
 .h1 {
   font-size: var(--text-size-h1);
   margin-block-start: 0.83em;
@@ -45,16 +44,13 @@ a,
 .dflex {
   display: flex;
 }
-  
+
 .flexRow {
   flex-direction: row;
 }
 
 .flexCol {
   flex-direction: column;
-}
-
-div:not(#root) {
 }
 
 /*
@@ -66,15 +62,15 @@ div:not(#root) {
   #profile_pic {
     order: 1;
   }
-  
+
   #contact {
     order: 2;
   }
-  
+
   #interests {
     order: 5;
   }
-  
+
   #details {
     order: 4;
   }
@@ -82,24 +78,22 @@ div:not(#root) {
   #schools {
     order: 7;
   }
-  
+
   #blurbs {
     order: 3;
   }
-  
+
   #companies {
     order: 6;
   }
   */
-
 @media (min-width: 1024px) {
   #root {
     width: 1000px;
     margin: 0 auto;
-    
-    main > div > div > div {
-      margin: 1em 0;
-    }
+  }
+  #root main > div > div > div {
+    margin: 1em 0;
   }
 
   /*
@@ -108,50 +102,49 @@ div:not(#root) {
     display: block;
   }
   */
-
   #profile_pic,
-  #contact,
-  #interests,
-  #details,
-  #schools {
+#contact,
+#interests,
+#details,
+#schools {
     width: 300px;
   }
 
   #network,
-  #blurbs,
-  #friends {
+#blurbs,
+#friends {
     width: 435px;
   }
 
   #companies {
     width: 600px;
   }
-  
+
   /*
   #profile_pic {
     order: 1;
   }
-  
+
   #contact {
     order: 2;
   }
-  
+
   #interests {
     order: 3;
   }
-  
+
   #details {
     order: 4;
   }
-  
+
   #schools {
     order: 5;
   }
-  
+
   #network {
     order: 6;
   }
-  
+
   #blurbs {
     order: 7;
   }
@@ -159,7 +152,7 @@ div:not(#root) {
   #friends {
     order: 8;
   }
-  
+
   #companies {
     order: 9;
   }
