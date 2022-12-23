@@ -1,7 +1,13 @@
 .network {
-  //height: 73px;
+  height: 73px;
   width: 443px;
   text-align: center;
-  //padding: 1em;
-  border: .15em solid #666;
+  border: 2px solid black;
+
+  .h1 {
+    font-size: var(--text-size-h1);
+    font-weight: 800;
+    position: relative;
+    top: 1.45em;
+  }
 }

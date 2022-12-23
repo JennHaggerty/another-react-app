@@ -1,6 +1,8 @@
 :root {
+  --black: black;
   --white: white;
   --grey: #E5E5E5;
+  --red: #cc0000;
 
   --primary-100: #D5E7FB;
   --primary-200: #B1D0F0;
@@ -45,8 +47,15 @@
   --text-primary: var(--primary-dark);
   --text-secondary: var(--secondary-dark);
 
-  --link-color: #4040FF;
+  --link-color: #003399;
 
   --text-size-body: 12px;
   --text-size-h1: 1.5em;
+
+  --mobile-max: 768px;
+  --tablet-min: 769px;
+  --tablet-max: 1024px;
+  --laptop-min: 1025px;
+  --laptop-max:1199px;
+  --desktop-min: 1200px;
 }

@@ -6,40 +6,15 @@ body {
 #root {
   background-color: var(--white);
 
-  main > div > div {
-    margin: 1em 0;
+  main {
+    display: flex;
+    flex-direction: column;
+    margin: 0 1em;
+
+    & > div {
+      margin: .5em 0;
+    }
   }
-}
-
-main {
-  display: flex;
-  flex-direction: column;
-  margin: 0 1em;
-}
-  
-.h1 {
-  font-size: var(--text-size-h1);
-  margin-block-start: 0.83em;
-  margin-block-end: 0.83em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
-  font-weight: bold;
-}
-
-a,
-.style-as-link {
-  text-decoration: none;
-  font-size: var(--text-size-body);
-  font-weight: 600;
-  color: var(--link-color);
-  padding: unset;
-  margin: unset;
-  background-color: transparent;
-  border: none;
-}
-
-.hidden {
-  display: none;
 }
 
 .dflex {
@@ -53,48 +28,39 @@ a,
 .flexCol {
   flex-direction: column;
 }
-
-div:not(#root) {
+  
+.h1 {
+  font-size: var(--text-size-h1);
+  font-weight: bold;
 }
 
-/*
-#network,
-#friends {
+a,
+.style-as-link {
+  text-decoration: none;
+  font-size: var(--text-size-body);
+  font-weight: 700;
+  color: var(--link-color);
+  padding: unset;
+  margin: unset;
+  background-color: transparent;
+  border: none;
+}
+
+.hidden {
   display: none;
 }
 
-  #profile_pic {
-    order: 1;
-  }
-  
-  #contact {
-    order: 2;
-  }
-  
-  #interests {
-    order: 5;
-  }
-  
-  #details {
-    order: 4;
-  }
+.bold {
+  font-weight: 800;
+}
 
-  #schools {
-    order: 7;
-  }
-  
-  #blurbs {
-    order: 3;
-  }
-  
-  #companies {
-    order: 6;
-  }
-  */
+.red {
+  color: var(--red);
+}
 
 @media (min-width: 1024px) {
   #root {
-    width: 1000px;
+    width: 950px;
     margin: 0 auto;
     
     main > div > div > div {
@@ -102,12 +68,18 @@ div:not(#root) {
     }
   }
 
-  /*
   #network,
-  #friends {
-    display: block;
+  #blurbs,
+  #friends,
+  #companies {
+    float: right;
   }
-  */
+
+  #network,
+  #blurbs,
+  #friends {
+    margin-right: 7em !important;
+  }
 
   #profile_pic,
   #contact,
@@ -126,42 +98,4 @@ div:not(#root) {
   #companies {
     width: 600px;
   }
-  
-  /*
-  #profile_pic {
-    order: 1;
-  }
-  
-  #contact {
-    order: 2;
-  }
-  
-  #interests {
-    order: 3;
-  }
-  
-  #details {
-    order: 4;
-  }
-  
-  #schools {
-    order: 5;
-  }
-  
-  #network {
-    order: 6;
-  }
-  
-  #blurbs {
-    order: 7;
-  }
-
-  #friends {
-    order: 8;
-  }
-  
-  #companies {
-    order: 9;
-  }
-  */
 }

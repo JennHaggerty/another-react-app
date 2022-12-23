@@ -13,7 +13,7 @@ export const ProfilePic = ({
 }) => {
   return (
     <div id="profile_pic" className={styles.pic}>
-      <span className="h1">{fname} {lname}</span>
+      <h1 className="h1">{fname} {lname}</h1>
       <div className="dflex">
         <div className={styles.img}>
           <img 

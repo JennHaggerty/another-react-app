@@ -1,5 +1,21 @@
+@charset "UTF-8";
+.company_box table tbody tr th {
+  color: var(--black);
+  font-weight: 700;
+}
+.company_box span {
+  font-weight: 800;
+}
 .company_box ul {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
+  list-style: none;
+  margin: 0.5em 0 0 0;
+  padding-left: 1.25em;
+}
+.company_box ul li:before {
+  content: "•";
+  color: var(--primary);
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
 }

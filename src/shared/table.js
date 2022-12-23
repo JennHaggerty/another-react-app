@@ -15,9 +15,9 @@ export const Table = ({
   id,
   children,
 }) => {
-  const rows = children.map(({title, text}) => {
+  const rows = children.map(({title, text}, i) => {
     return (
-      <tr key={title}>
+      <tr key={title + "-" + i}>
         <th>{title}</th>
         <td>
           {text}
