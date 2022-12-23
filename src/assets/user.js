@@ -227,18 +227,6 @@ export const user = {
     {
       title:
       <>
-        <a href="https://sc.edu/">University of South Carolina</a> <br/>
-        Columbia, SOUTH CAROLINA <br/>
-        Grad Year: 2012 <br/>
-        Student Status: Alumni <br/>
-        Degree: BA <br/>
-        Major: Studio arts <br/>
-      </>,
-      text: "From 2008 to 2012"
-    },
-    {
-      title:
-      <>
         <a href="https://www.augustatech.edu/">Augusta Technical College</a> <br/>
         Augusta, GEORGIA <br/>
         Grad Year: 2021 <br/>
@@ -247,6 +235,18 @@ export const user = {
         Major: C#, Java, and cross-platform programming <br/>
       </>,
       text: "From 2021 to 2021"
+    },
+    {
+      title:
+      <>
+        <a href="https://sc.edu/">University of South Carolina</a> <br/>
+        Columbia, SOUTH CAROLINA <br/>
+        Grad Year: 2012 <br/>
+        Student Status: Alumni <br/>
+        Degree: BA <br/>
+        Major: Studio arts <br/>
+      </>,
+      text: "From 2008 to 2012"
     }
   ],
 }

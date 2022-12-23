@@ -51,11 +51,6 @@ export const App = () => {
 							likeToMeet={user.likeToMeet}
 							customClass={styles.secondaryBox}
 						/>
-						<DetailsBox
-							title={user.fname}
-							children={user.details}
-							customClass={styles.primaryBox + " " + styles.primaryTable}
-						/>
 						<InterestsBox
 							title={user.fname}
 							children={user.interests}
@@ -64,7 +59,7 @@ export const App = () => {
 						<CompaniesBox
 							title={user.fname}
 							children={user.companies}
-							customClass={styles.secondaryBox + " " + styles.secondaryTable}
+							customClass={styles.primaryBox + " " + styles.primaryTable}
 						/>
 						<SchoolsBox
 							title={user.fname}

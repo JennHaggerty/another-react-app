@@ -3,6 +3,7 @@ import styles from "./contact.module.scss";
 
 import emailIcon from "../../assets/images/icon_email.gif";
 import forwardIcon from "../../assets/images/icon_forward.gif";
+import resume from "../../assets/downloads/JenniferHaggerty_InterfaceDeveloper_2023.pdf";
 
 export const ContactBox = ({
   fname,
@@ -27,18 +28,12 @@ export const ContactBox = ({
               <img className={styles.contactIcon} src={forwardIcon} alt={"Click to download " + fname + "'s resume"} />
             </th>
             <td>
-              <button
-                type="button"
-                className="style-as-link"
-                onClick={() => {
-                  //print resume
-
-                  //copy link to url
-                  //window.navigator.clipboard.writeText(window.location.href);
-                }}
+              <a
+                download="JenniferHaggerty_InterfactDeveloper_2023Resume.pdf"
+                href={resume}
               >
                 Forward to friend
-              </button>
+              </a>
             </td>
           </tr>
           {/**
