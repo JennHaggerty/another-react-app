@@ -1,12 +1,13 @@
+@charset "UTF-8";
 .columns {
   display: flex;
   flex-direction: row;
 }
 
-.blueBox {
+.primaryBox {
   border: 2px solid var(--bg-primary);
 }
-.blueBox h2 {
+.primaryBox h2 {
   color: white;
   background-color: var(--bg-primary);
   font-size: var(--text-size-body);
@@ -15,10 +16,10 @@
   padding: 0 0.75em;
 }
 
-.blueTable table {
+.primaryTable table {
   width: -webkit-fill-available;
 }
-.blueTable table th {
+.primaryTable table th {
   color: var(--text-primary);
   background-color: var(--bg-primary-light);
   text-align: left;
@@ -26,12 +27,25 @@
   vertical-align: top;
   width: 40%;
 }
-.blueTable table td {
+.primaryTable table td {
   background-color: var(--bg-primary-lightest);
   font-size: var(--text-size-body);
 }
+.primaryTable table td ul {
+  list-style: none;
+  margin: 0.5em 0 0 0;
+  padding-left: 1.25em;
+}
+.primaryTable table td ul li:before {
+  content: "•";
+  color: var(--primary-dark);
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
 
-.orangeBox h2 {
+.secondaryBox h2 {
   color: var(--text-secondary);
   background-color: var(--bg-secondary-light);
   font-size: var(--text-size-body);
@@ -40,10 +54,10 @@
   padding: 0 1em;
 }
 
-.orangeTable table {
+.secondaryTable table {
   width: -webkit-fill-available;
 }
-.orangeTable table th {
+.secondaryTable table th {
   color: var(--text-primary);
   background-color: var(--bg-secondary);
   text-align: center;
@@ -51,7 +65,20 @@
   vertical-align: middle;
   width: 40%;
 }
-.orangeTable table td {
+.secondaryTable table td {
   background-color: var(--bg-secondary-light);
   font-size: var(--text-size-body);
+}
+.secondaryTable table td ul {
+  list-style: none;
+  margin: 0.5em 0 0 0;
+  padding-left: 1.25em;
+}
+.secondaryTable table td ul li:before {
+  content: "•";
+  color: var(--secondary-dark);
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
 }

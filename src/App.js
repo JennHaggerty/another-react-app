@@ -43,33 +43,33 @@ export const App = () => {
 						<ContactBox 
 							fname={user.fname}
 							email={user.email}
-							customClass={styles.blueBox}
+							customClass={styles.primaryBox}
 						/>
 						<BlurbsBox
 							title={user.fname}
 							about={user.about}
 							likeToMeet={user.likeToMeet}
-							customClass={styles.orangeBox}
+							customClass={styles.secondaryBox}
 						/>
 						<DetailsBox
 							title={user.fname}
 							children={user.details}
-							customClass={styles.blueBox + " " + styles.blueTable}
+							customClass={styles.primaryBox + " " + styles.primaryTable}
 						/>
 						<InterestsBox
 							title={user.fname}
 							children={user.interests}
-							customClass={styles.blueBox + " " + styles.blueTable}
+							customClass={styles.primaryBox + " " + styles.primaryTable}
 						/>
 						<CompaniesBox
 							title={user.fname}
 							children={user.companies}
-							customClass={styles.orangeBox + " " + styles.orangeTable}
+							customClass={styles.secondaryBox + " " + styles.secondaryTable}
 						/>
 						<SchoolsBox
 							title={user.fname}
 							children={user.schools}
-							customClass={styles.blueBox + " " + styles.blueTable}
+							customClass={styles.primaryBox + " " + styles.primaryTable}
 						/>
 				</ConditionalRender>
 				<ConditionalRender isShown={!isMobile}>
@@ -88,22 +88,22 @@ export const App = () => {
 						<ContactBox 
 							fname={user.fname}
 							email={user.email}
-							customClass={styles.blueBox}
+							customClass={styles.primaryBox}
 						/>
 						<InterestsBox
 							title={user.fname}
 							children={user.interests}
-							customClass={styles.blueBox + " " + styles.blueTable}
+							customClass={styles.primaryBox + " " + styles.primaryTable}
 						/>
 						<DetailsBox
 							title={user.fname}
 							children={user.details}
-							customClass={styles.blueBox + " " + styles.blueTable}
+							customClass={styles.primaryBox + " " + styles.primaryTable}
 						/>
 						<SchoolsBox
 							title={user.fname}
 							children={user.schools}
-							customClass={styles.blueBox + " " + styles.blueTable}
+							customClass={styles.primaryBox + " " + styles.primaryTable}
 						/>
 					</div>
 					<div className={styles.column}>
@@ -112,17 +112,17 @@ export const App = () => {
 							title={user.fname}
 							about={user.about}
 							likeToMeet={user.likeToMeet}
-							customClass={styles.orangeBox}
+							customClass={styles.secondaryBox}
 						/>
 						<FriendsBox
 							title={user.fname}
-							customClass={styles.orangeBox}
+							customClass={styles.secondaryBox}
 							children={user.friends}
 						/>
 						<CompaniesBox
 							title={user.fname}
 							children={user.companies}
-							customClass={styles.orangeBox + " " + styles.orangeTable}
+							customClass={styles.secondaryBox + " " + styles.secondaryTable}
 						/>
 					</div>
 				</div>
@@ -176,33 +176,33 @@ export const App = () => {
 							<ContactBox 
 								fname={user.fname}
 								email={user.email}
-								customClass={styles.blueBox}
+								customClass={styles.primaryBox}
 							/>
 							<BlurbsBox
 								title={user.fname}
 								about={user.about}
 								likeToMeet={user.likeToMeet}
-								customClass={styles.orangeBox}
+								customClass={styles.secondaryBox}
 							/>
 							<DetailsBox
 								title={user.fname}
 								children={user.details}
-								customClass={styles.blueBox + " " + styles.blueTable}
+								customClass={styles.primaryBox + " " + styles.primaryTable}
 							/>
 							<InterestsBox
 								title={user.fname}
 								children={user.interests}
-								customClass={styles.blueBox + " " + styles.blueTable}
+								customClass={styles.primaryBox + " " + styles.primaryTable}
 							/>
 							<CompaniesBox
 								title={user.fname}
 								children={user.companies}
-								customClass={styles.blueBox + " " + styles.blueTable}
+								customClass={styles.primaryBox + " " + styles.primaryTable}
 							/>
 							<SchoolsBox
 								title={user.fname}
 								children={user.schools}
-								customClass={styles.blueBox + " " + styles.blueTable}
+								customClass={styles.primaryBox + " " + styles.primaryTable}
 							/>
 					</MobileView>
 					<BrowserView className={styles.columns}>
@@ -220,22 +220,22 @@ export const App = () => {
 							<ContactBox 
 								fname={user.fname}
 								email={user.email}
-								customClass={styles.blueBox}
+								customClass={styles.primaryBox}
 							/>
 							<InterestsBox
 								title={user.fname}
 								children={user.interests}
-								customClass={styles.blueBox + " " + styles.blueTable}
+								customClass={styles.primaryBox + " " + styles.primaryTable}
 							/>
 							<DetailsBox
 								title={user.fname}
 								children={user.details}
-								customClass={styles.blueBox + " " + styles.blueTable}
+								customClass={styles.primaryBox + " " + styles.primaryTable}
 							/>
 							<SchoolsBox
 								title={user.fname}
 								children={user.schools}
-								customClass={styles.blueBox + " " + styles.blueTable}
+								customClass={styles.primaryBox + " " + styles.primaryTable}
 							/>
 						</div>
 						<div className={styles.column}>
@@ -244,17 +244,17 @@ export const App = () => {
 								title={user.fname}
 								about={user.about}
 								likeToMeet={user.likeToMeet}
-								customClass={styles.orangeBox}
+								customClass={styles.secondaryBox}
 							/>
 							<FriendsBox
 								title={user.fname}
-								customClass={styles.orangeBox}
+								customClass={styles.secondaryBox}
 								children={user.friends}
 							/>
 							<CompaniesBox
 								title={user.fname}
 								children={user.companies}
-								customClass={styles.blueBox + " " + styles.blueTable}
+								customClass={styles.primaryBox + " " + styles.primaryTable}
 							/>
 						</div>
 					</BrowserView>
