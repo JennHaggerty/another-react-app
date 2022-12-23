@@ -64,7 +64,7 @@ export const App = () => {
 						<CompaniesBox
 							title={user.fname}
 							children={user.companies}
-							customClass={styles.blueBox + " " + styles.blueTable}
+							customClass={styles.orangeBox + " " + styles.orangeTable}
 						/>
 						<SchoolsBox
 							title={user.fname}
@@ -122,7 +122,7 @@ export const App = () => {
 						<CompaniesBox
 							title={user.fname}
 							children={user.companies}
-							customClass={styles.blueBox + " " + styles.blueTable}
+							customClass={styles.orangeBox + " " + styles.orangeTable}
 						/>
 					</div>
 				</div>

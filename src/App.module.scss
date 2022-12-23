@@ -46,3 +46,23 @@
     padding: 0 1em;
   }
 }
+
+.orangeTable {
+  table {
+    width: -webkit-fill-available;
+
+    th {
+      color: var(--text-primary);
+      background-color: var(--bg-secondary);
+      text-align: center;
+      font-size: var(--text-size-body);
+      vertical-align: middle;
+      width: 40%;
+    }
+
+    td {
+      background-color: var(--bg-secondary-light);
+      font-size: var(--text-size-body);
+    }
+  }
+}

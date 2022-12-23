@@ -7,7 +7,7 @@ export const user = {
   fname: "Jennifer",
   lname: "Haggerty",
   email: "thejenniferhaggerty@protonmail.com",
-  location: "Remote, EST United States",
+  location: <>GEORGIA, <br/> United States</>,
   photoLink: "https://studiovonjenn.com",
   age: 100,
   pronouns: "She/xe",
