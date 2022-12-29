@@ -6,9 +6,9 @@ import { Navbar } from "../navbar/navbar";
 export const Header = () => {
   return (
     <>
-      <header className={styles.banner} aria-hidden="true">
+      <header className={styles.banner}>
       </header>
-      <Navbar />
+      <Navbar aria-hidden="true" />
     </>
   )
 }

@@ -13,8 +13,7 @@ export const user = {
   pronouns: "She/xe",
   photo: jenn_pic,
   quote: "Have you tried turning it off and back on?",
-  about: `Jennifer enjoys developing websites and apps that warrant repeat visits through their accessibility
-  and ease of use in frontend development.`,
+  about: `Jennifer enjoys developing websites, admininstrative dashboards, and apps that users visit repeatedly and enjoy. `,
   likeToMeet: `I'd like to meet people interested in video games, home improvement, and talking code.`,
   companies: [
     {

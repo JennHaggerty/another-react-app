@@ -1,0 +1,16 @@
+.palette {
+  display: inline-flex;
+  align-items: center;
+  float: right;
+  margin: 1em;
+  color: var(--white);
+
+  img {
+    margin-left: .5em;
+    height: 25px;
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+}

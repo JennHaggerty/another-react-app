@@ -5,22 +5,20 @@ body {
 
 #root {
   background-color: var(--white);
-
-  main {
-    display: flex;
-    flex-direction: column;
-    margin: 0 .75em;
-
-    & > div {
-      margin: .5em 0;
-    }
-  }
+}
+#root main {
+  display: flex;
+  flex-direction: column;
+  margin: 0 0.75em;
+}
+#root main > div {
+  margin: 0.5em 0;
 }
 
 .dflex {
   display: flex;
 }
-  
+
 .flexRow {
   flex-direction: row;
 }
@@ -28,7 +26,7 @@ body {
 .flexCol {
   flex-direction: column;
 }
-  
+
 .h1 {
   font-size: var(--text-size-h1);
   font-weight: bold;
@@ -44,43 +42,38 @@ a,
   margin: unset;
   background-color: transparent;
   border: none;
-
-  &:hover {
-    color: var(--link-color-hover);
-    text-decoration: underline;
-  }
+}
+a:hover,
+.style-as-link:hover {
+  color: var(--link-color-hover);
+  text-decoration: underline;
 }
 
 .btn {
-  border-radius: .75em;
+  border-radius: 0.75em;
   padding: 1em;
   font-weight: 900;
   text-transform: uppercase;
   display: inline-flex;
   align-items: center;
-
-  &.primary {
-    color: var(--white);
-    background-color: var(--bg-primary);
-    border: 2px solid var(--bg-primary);
-
-    &.outline {
-      color: var(--text-primary);
-    }
-  }
-
-  &.secondary {
-    background-color: var(--bg-secondary);
-    border: 2px solid var(--bg-secondary);
-
-    &.outline {
-      color: var(--text-secondary);
-    }
-  }
-
-  &.outline {
-    background-color: transparent;
-  }
+}
+.btn.primary {
+  color: var(--white);
+  background-color: var(--bg-primary);
+  border: 2px solid var(--bg-primary);
+}
+.btn.primary.outline {
+  color: var(--text-primary);
+}
+.btn.secondary {
+  background-color: var(--bg-secondary);
+  border: 2px solid var(--bg-secondary);
+}
+.btn.secondary.outline {
+  color: var(--text-secondary);
+}
+.btn.outline {
+  background-color: transparent;
 }
 
 .hidden {
@@ -99,40 +92,38 @@ a,
   #root {
     width: 950px;
     margin: 0 auto;
-
-    main {
-      width: unset;
-    }
-    
-    main > div > div > div {
-      margin: 1em 0;
-    }
+  }
+  #root main {
+    width: unset;
+  }
+  #root main > div > div > div {
+    margin: 1em 0;
   }
 
   #network,
-  #blurbs,
-  #friends,
-  #companies {
+#blurbs,
+#friends,
+#companies {
     float: right;
   }
 
   #network,
-  #blurbs,
-  #friends {
+#blurbs,
+#friends {
     margin-right: 7em !important;
   }
 
   #profile_pic,
-  #contact,
-  #interests,
-  #details,
-  #schools {
+#contact,
+#interests,
+#details,
+#schools {
     width: 300px;
   }
 
   #network,
-  #blurbs,
-  #friends {
+#blurbs,
+#friends {
     width: 435px;
   }
 
