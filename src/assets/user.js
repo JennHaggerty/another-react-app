@@ -1,8 +1,6 @@
 import jenn_pic from "./images/jennifer_portrait.JPG";
 import samson_pic from "./images/samson_portrait.JPG";
 import iris_pic from "./images/iris_portrait.jpeg";
-import boneweaver_pic from "./images/theBoneWeaver_portrait.jpeg";
-import mwf_pic from "./images/mwf_portrait.png"
 
 export const user = {
   fname: "Jennifer",
@@ -188,20 +186,6 @@ export const user = {
       photo: iris_pic,
       title: "Intern",
       hobbies: "Iris' hobbies include eating, playing with toys, and meeting new people."
-    },
-    {
-      name: "The Bone Weaver",
-      photo: boneweaver_pic,
-      title: "Tablet weaver",
-      hobbies: "",
-      url: "https://www.facebook.com/theboneweavercustomcreations",
-    },
-    {
-      name: "Metal Wackers Forge",
-      photo: mwf_pic,
-      title: "Blacksmith",
-      hobbies: "",
-      url: "https://www.metalwackersforge.com/",
     }
   ],
   interests: [
