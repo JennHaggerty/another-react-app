@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/static/css/main.ba2e60c9.css",
-    "main.js": "/static/js/main.df6b1ce4.js",
-    "static/css/152.ae85987d.chunk.css": "/static/css/152.ae85987d.chunk.css",
-    "static/js/152.f09b52d1.chunk.js": "/static/js/152.f09b52d1.chunk.js",
-    "static/js/787.5eea4f14.chunk.js": "/static/js/787.5eea4f14.chunk.js",
-    "static/media/iris_portrait.jpeg": "/static/media/iris_portrait.dbe69b2e800a503892f1.jpeg",
-    "static/media/samson_portrait.JPG": "/static/media/samson_portrait.7fe4341f2a32904af66c.JPG",
-    "static/media/icon_email.gif": "/static/media/icon_email.55342cf19263f8316e8b.gif",
-    "static/media/icon_forward.gif": "/static/media/icon_forward.7484a4b50ab858bf6399.gif",
-    "static/media/jennifer_portrait.JPG": "/static/media/jennifer_portrait.0714dbb72d67e4f0d8ca.JPG",
-    "static/media/JenniferHaggerty_InterfaceDeveloper_2023.pdf": "/static/media/JenniferHaggerty_InterfaceDeveloper_2023.bb88bd5988e7c874bedd.pdf",
-    "index.html": "/index.html",
-    "main.ba2e60c9.css.map": "/static/css/main.ba2e60c9.css.map",
-    "main.df6b1ce4.js.map": "/static/js/main.df6b1ce4.js.map",
-    "152.ae85987d.chunk.css.map": "/static/css/152.ae85987d.chunk.css.map",
-    "152.f09b52d1.chunk.js.map": "/static/js/152.f09b52d1.chunk.js.map",
-    "787.5eea4f14.chunk.js.map": "/static/js/787.5eea4f14.chunk.js.map"
+    "main.css": "/JennHaggerty/jenniferhaggerty_webdev_myspace2004/static/css/main.ba2e60c9.css",
+    "main.js": "/JennHaggerty/jenniferhaggerty_webdev_myspace2004/static/js/main.0d5ceaf2.js",
+    "static/css/152.ae85987d.chunk.css": "/JennHaggerty/jenniferhaggerty_webdev_myspace2004/static/css/152.ae85987d.chunk.css",
+    "static/js/152.f09b52d1.chunk.js": "/JennHaggerty/jenniferhaggerty_webdev_myspace2004/static/js/152.f09b52d1.chunk.js",
+    "static/js/787.5eea4f14.chunk.js": "/JennHaggerty/jenniferhaggerty_webdev_myspace2004/static/js/787.5eea4f14.chunk.js",
+    "static/media/iris_portrait.jpeg": "/JennHaggerty/jenniferhaggerty_webdev_myspace2004/static/media/iris_portrait.dbe69b2e800a503892f1.jpeg",
+    "static/media/samson_portrait.JPG": "/JennHaggerty/jenniferhaggerty_webdev_myspace2004/static/media/samson_portrait.7fe4341f2a32904af66c.JPG",
+    "static/media/icon_email.gif": "/JennHaggerty/jenniferhaggerty_webdev_myspace2004/static/media/icon_email.55342cf19263f8316e8b.gif",
+    "static/media/icon_forward.gif": "/JennHaggerty/jenniferhaggerty_webdev_myspace2004/static/media/icon_forward.7484a4b50ab858bf6399.gif",
+    "static/media/jennifer_portrait.JPG": "/JennHaggerty/jenniferhaggerty_webdev_myspace2004/static/media/jennifer_portrait.0714dbb72d67e4f0d8ca.JPG",
+    "static/media/JenniferHaggerty_InterfaceDeveloper_2023.pdf": "/JennHaggerty/jenniferhaggerty_webdev_myspace2004/static/media/JenniferHaggerty_InterfaceDeveloper_2023.bb88bd5988e7c874bedd.pdf",
+    "index.html": "/JennHaggerty/jenniferhaggerty_webdev_myspace2004/index.html",
+    "main.ba2e60c9.css.map": "/JennHaggerty/jenniferhaggerty_webdev_myspace2004/static/css/main.ba2e60c9.css.map",
+    "main.0d5ceaf2.js.map": "/JennHaggerty/jenniferhaggerty_webdev_myspace2004/static/js/main.0d5ceaf2.js.map",
+    "152.ae85987d.chunk.css.map": "/JennHaggerty/jenniferhaggerty_webdev_myspace2004/static/css/152.ae85987d.chunk.css.map",
+    "152.f09b52d1.chunk.js.map": "/JennHaggerty/jenniferhaggerty_webdev_myspace2004/static/js/152.f09b52d1.chunk.js.map",
+    "787.5eea4f14.chunk.js.map": "/JennHaggerty/jenniferhaggerty_webdev_myspace2004/static/js/787.5eea4f14.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ba2e60c9.css",
-    "static/js/main.df6b1ce4.js"
+    "static/js/main.0d5ceaf2.js"
   ]
 }
