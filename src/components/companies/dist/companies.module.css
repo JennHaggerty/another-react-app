@@ -1,9 +1,0 @@
-.company_box table tbody tr th {
-  color: var(--black);
-  font-weight: 700;
-  vertical-align: top;
-  padding: 0 0.5em;
-}
-.company_box span {
-  font-weight: 800;
-}
