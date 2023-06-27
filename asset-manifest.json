@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/jenniferhaggerty_webdev_myspace2004/static/css/main.ba2e60c9.css",
-    "main.js": "/jenniferhaggerty_webdev_myspace2004/static/js/main.91c7420d.js",
-    "static/css/152.ae85987d.chunk.css": "/jenniferhaggerty_webdev_myspace2004/static/css/152.ae85987d.chunk.css",
+    "main.js": "/jenniferhaggerty_webdev_myspace2004/static/js/main.095fc107.js",
+    "static/css/152.57467780.chunk.css": "/jenniferhaggerty_webdev_myspace2004/static/css/152.57467780.chunk.css",
     "static/js/152.f09b52d1.chunk.js": "/jenniferhaggerty_webdev_myspace2004/static/js/152.f09b52d1.chunk.js",
     "static/js/787.5eea4f14.chunk.js": "/jenniferhaggerty_webdev_myspace2004/static/js/787.5eea4f14.chunk.js",
     "static/media/iris_portrait.jpeg": "/jenniferhaggerty_webdev_myspace2004/static/media/iris_portrait.dbe69b2e800a503892f1.jpeg",
@@ -13,13 +13,13 @@
     "static/media/JenniferHaggerty_InterfaceDeveloper_2023.pdf": "/jenniferhaggerty_webdev_myspace2004/static/media/JenniferHaggerty_InterfaceDeveloper_2023.bb88bd5988e7c874bedd.pdf",
     "index.html": "/jenniferhaggerty_webdev_myspace2004/index.html",
     "main.ba2e60c9.css.map": "/jenniferhaggerty_webdev_myspace2004/static/css/main.ba2e60c9.css.map",
-    "main.91c7420d.js.map": "/jenniferhaggerty_webdev_myspace2004/static/js/main.91c7420d.js.map",
-    "152.ae85987d.chunk.css.map": "/jenniferhaggerty_webdev_myspace2004/static/css/152.ae85987d.chunk.css.map",
+    "main.095fc107.js.map": "/jenniferhaggerty_webdev_myspace2004/static/js/main.095fc107.js.map",
+    "152.57467780.chunk.css.map": "/jenniferhaggerty_webdev_myspace2004/static/css/152.57467780.chunk.css.map",
     "152.f09b52d1.chunk.js.map": "/jenniferhaggerty_webdev_myspace2004/static/js/152.f09b52d1.chunk.js.map",
     "787.5eea4f14.chunk.js.map": "/jenniferhaggerty_webdev_myspace2004/static/js/787.5eea4f14.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ba2e60c9.css",
-    "static/js/main.91c7420d.js"
+    "static/js/main.095fc107.js"
   ]
 }
