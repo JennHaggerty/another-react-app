@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/jenniferhaggerty_webdev_myspace2004/static/css/main.ba2e60c9.css",
+    "main.js": "/jenniferhaggerty_webdev_myspace2004/static/js/main.095fc107.js",
+    "static/css/152.57467780.chunk.css": "/jenniferhaggerty_webdev_myspace2004/static/css/152.57467780.chunk.css",
+    "static/js/152.f09b52d1.chunk.js": "/jenniferhaggerty_webdev_myspace2004/static/js/152.f09b52d1.chunk.js",
+    "static/js/787.5eea4f14.chunk.js": "/jenniferhaggerty_webdev_myspace2004/static/js/787.5eea4f14.chunk.js",
+    "static/media/iris_portrait.jpeg": "/jenniferhaggerty_webdev_myspace2004/static/media/iris_portrait.dbe69b2e800a503892f1.jpeg",
+    "static/media/samson_portrait.JPG": "/jenniferhaggerty_webdev_myspace2004/static/media/samson_portrait.7fe4341f2a32904af66c.JPG",
+    "static/media/icon_email.gif": "/jenniferhaggerty_webdev_myspace2004/static/media/icon_email.55342cf19263f8316e8b.gif",
+    "static/media/icon_forward.gif": "/jenniferhaggerty_webdev_myspace2004/static/media/icon_forward.7484a4b50ab858bf6399.gif",
+    "static/media/jennifer_portrait.JPG": "/jenniferhaggerty_webdev_myspace2004/static/media/jennifer_portrait.0714dbb72d67e4f0d8ca.JPG",
+    "static/media/JenniferHaggerty_InterfaceDeveloper_2023.pdf": "/jenniferhaggerty_webdev_myspace2004/static/media/JenniferHaggerty_InterfaceDeveloper_2023.bb88bd5988e7c874bedd.pdf",
+    "index.html": "/jenniferhaggerty_webdev_myspace2004/index.html",
+    "main.ba2e60c9.css.map": "/jenniferhaggerty_webdev_myspace2004/static/css/main.ba2e60c9.css.map",
+    "main.095fc107.js.map": "/jenniferhaggerty_webdev_myspace2004/static/js/main.095fc107.js.map",
+    "152.57467780.chunk.css.map": "/jenniferhaggerty_webdev_myspace2004/static/css/152.57467780.chunk.css.map",
+    "152.f09b52d1.chunk.js.map": "/jenniferhaggerty_webdev_myspace2004/static/js/152.f09b52d1.chunk.js.map",
+    "787.5eea4f14.chunk.js.map": "/jenniferhaggerty_webdev_myspace2004/static/js/787.5eea4f14.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ba2e60c9.css",
+    "static/js/main.095fc107.js"
+  ]
+}
