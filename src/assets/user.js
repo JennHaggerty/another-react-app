@@ -9,7 +9,7 @@ export const user = {
   location: <>GEORGIA, <br/> United States</>,
   photoLink: "https://studiovonjenn.com",
   age: 100,
-  pronouns: "She/xe",
+  pronouns: "She/her",
   photo: jenn_pic,
   quote: "Have you tried turning it off and back on?",
   about: `Jennifer enjoys developing websites, admininstrative dashboards, and apps that users visit repeatedly and enjoy. `,
@@ -159,7 +159,7 @@ export const user = {
     },
     {
       title: "Here for:",
-      text: `Friends, Networking`,
+      text: `Networking`,
     },
     {
       title: "Hometown:",

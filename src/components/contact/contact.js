@@ -3,7 +3,7 @@ import styles from "./contact.module.scss";
 
 import emailIcon from "../../assets/images/icon_email.gif";
 import forwardIcon from "../../assets/images/icon_forward.gif";
-import resume from "../../assets/downloads/JenniferHaggerty_InterfaceDeveloper_2023.pdf";
+import resume from "../../assets/downloads/JenniferHaggerty_WebDeveloper.pdf";
 
 export const ContactBox = ({
   fname,

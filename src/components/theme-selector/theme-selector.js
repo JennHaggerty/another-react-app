@@ -1,7 +1,7 @@
 import React, {lazy, Suspense} from "react";
 
 const Styles2004 = lazy(() => import("./variables2004"));
-//const Styles2004Accessible = lazy(() => import("./variables2004Accessible"));
+//const AccessibleStyles2004 = lazy(() => import("./accessibleVariables2004"));
 
 export const ThemeSelector = ({ children }) => {
     return (
