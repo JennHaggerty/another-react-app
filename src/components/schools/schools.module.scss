@@ -1,0 +1,21 @@
+.school_box {
+  table {
+    tbody {
+      tr {
+        th {
+          width: 75%;
+          color: var(--black);
+          font-weight: normal;
+
+          a {
+            color: var(--primary-darkest);
+          }
+        }
+
+        td {
+          text-align: center;
+        }
+      }
+    }
+  }
+}

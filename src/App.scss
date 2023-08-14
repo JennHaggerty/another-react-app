@@ -1,0 +1,142 @@
+body {
+  background-color: var(--bg-body);
+  font-size: var(--text-size-body);
+}
+
+#root {
+  background-color: var(--white);
+
+  main {
+    display: flex;
+    flex-direction: column;
+    margin: 0 .75em;
+
+    & > div {
+      margin: .5em 0;
+    }
+  }
+}
+
+.dflex {
+  display: flex;
+}
+
+.flexRow {
+  flex-direction: row;
+}
+
+.flexCol {
+  flex-direction: column;
+}
+
+.h1 {
+  font-size: var(--text-size-h1);
+  font-weight: bold;
+}
+
+a,
+.style-as-link {
+  text-decoration: none;
+  font-size: var(--text-size-body);
+  font-weight: 700;
+  color: var(--link-color);
+  padding: unset;
+  margin: unset;
+  background-color: transparent;
+  border: none;
+
+  &:hover {
+    color: var(--link-color-hover);
+    text-decoration: underline;
+  }
+}
+
+.btn {
+  border-radius: .75em;
+  padding: 1em;
+  font-weight: 900;
+  text-transform: uppercase;
+  display: inline-flex;
+  align-items: center;
+
+  &.primary {
+    color: var(--white);
+    background-color: var(--bg-primary);
+    border: 2px solid var(--bg-primary);
+
+    &.outline {
+      color: var(--text-primary);
+    }
+  }
+
+  &.secondary {
+    background-color: var(--bg-secondary);
+    border: 2px solid var(--bg-secondary);
+
+    &.outline {
+      color: var(--text-secondary);
+    }
+  }
+
+  &.outline {
+    background-color: transparent;
+  }
+}
+
+.hidden {
+  display: none;
+}
+
+.bold {
+  font-weight: 800;
+}
+
+.red {
+  color: var(--red);
+}
+
+@media (min-width: 1024px) {
+  #root {
+    width: 950px;
+    margin: 0 auto;
+
+    main {
+      width: unset;
+    }
+
+    main > div > div > div {
+      margin: 1em 0;
+    }
+  }
+
+  #network,
+  #blurbs,
+  #friends,
+  #companies {
+    float: right;
+  }
+
+  #network,
+  #blurbs,
+  #friends {
+    margin-right: 7em !important;
+  }
+
+  #profile_pic,
+  #contact,
+  #interests,
+  #details,
+  #schools {
+    width: 300px;
+  }
+
+  #network,
+  #blurbs,
+  #friends {
+    width: 435px;
+  }
+
+  #companies {
+    width: 600px;
+  }
+}

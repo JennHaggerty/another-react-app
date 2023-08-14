@@ -1,0 +1,17 @@
+.company_box {
+  table {
+    tbody {
+      tr {
+        th { 
+          color: var(--black);
+          font-weight: 700;
+          vertical-align: top;
+          padding: 0 .5em;
+        }
+      }
+    }
+  }
+  span {
+    font-weight: 800;
+  }
+}
