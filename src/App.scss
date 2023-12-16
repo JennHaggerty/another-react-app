@@ -9,10 +9,15 @@ body {
   main {
     display: flex;
     flex-direction: column;
-    margin: 0 .75em;
 
     & > div {
-      margin: .5em 0;
+      margin: .5em .75em;
+    }
+
+    @media (max-width: 768px) {
+      & > div {
+        margin: 1em 2em;
+      }
     }
   }
 }
